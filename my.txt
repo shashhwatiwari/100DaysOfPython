@@ -1,0 +1,2 @@
+Hello, my name is Shashwat and um I guess this is me trying to learn how
+to read,write or do whatever from a text file and access it using python

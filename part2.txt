@@ -1,0 +1,6 @@
+this is the second text file that is to be opened using the with operator which doesnt
+have the need
+for us to remmeber to close
+the file using the filne_name.close() functionThis part is appended using python script
+This part is appended using python script
+This part is appended using python script

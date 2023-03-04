@@ -1,16 +1,70 @@
-#1. Create a greeting for your program.
+from turtle import Turtle, Screen
+import random
 
-#2. Ask the user for the city that they grew up in.
+kachua1 = Turtle()
+kachua1.shape("turtle")
+kachua1.penup()
+kachua1.color("tomato1")
+kachua1.sety(10)
+kachua2 = Turtle()
+kachua2.penup()
+kachua2.shape("turtle")
+kachua2.color("medium spring green")
+kachua2.sety(30)
+kachua3 = Turtle()
+kachua3.penup()
+kachua3.shape("turtle")
+kachua3.color("turquoise1")
+kachua3.sety(50)
+kachua4 = Turtle()
+kachua4.penup()
+kachua4.shape("turtle")
+kachua4.color("MediumOrchid1")
+kachua4.sety(70)
+kachua5 = Turtle()
+kachua5.penup()
+kachua5.shape("turtle")
+kachua5.color("yellow2")
+kachua5.sety(90)
 
-#3. Ask the user for the name of a pet.
+kachua1.setx(-100)
+kachua2.setx(-100)
+kachua3.setx(-100)
+kachua4.setx(-100)
+kachua5.setx(-100)
 
-#4. Combine the name of their city and pet and show them their band name.
 
-#5. Make sure the input cursor shows on a new line, see the example at:
-#   https://replit.com/@appbrewery/band-name-generator-end
-print("Welcome to the Band Name Generator program!\n")
-city = input("Enter the name of the city you grew up in\n")
-petname = input("Enter the name of your pet\n")
-print("Band name generated for you is:")
-print(city + " " + petname)
-print("\n")
+def moveturt():
+    cont = True
+    while cont:
+        steps = random.randint(15, 29)
+        kachua1.forward(steps)
+        steps = random.randint(15, 29)
+        kachua2.forward(steps)
+        steps = random.randint(15, 29)
+        kachua3.forward(steps)
+        steps = random.randint(15, 29)
+        kachua4.forward(steps)
+        steps = random.randint(15, 29)
+        kachua5.forward(steps)
+        if kachua1.xcor() > 700:
+            cont = False
+            break
+        elif kachua2.xcor() > 700:
+            cont = False
+            break
+        elif kachua3.xcor() > 700:
+            cont = False
+            break
+        elif kachua4.xcor() > 700:
+            cont = False
+            break
+        elif kachua5.xcor() > 700:
+            cont = False
+            break
+
+
+screen = Screen()
+screen.listen()
+screen.onkey(key="space", fun=moveturt)
+screen.exitonclick()
